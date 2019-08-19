@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/kungua/GUI/issues"
   },
-  "homepage": "https://github.com/kungua/GUI#readme"
+  "homepage": "https://github.com/kungua/GUI#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  }
 }
