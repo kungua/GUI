@@ -1,8 +1,7 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+
   entry: {
     "gui-react": "./lib/index.tsx"
   },
@@ -15,26 +14,6 @@ module.exports = {
     libraryTarget: "umd"
   },
   module: {
-    rules: [{ test: /\.tsx?$/, loader: "awesome-typescript-loader" }]
+    rules: [{test: /\.tsx?$/, loader: "awesome-typescript-loader"}]
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "GUI - React",
-      template: "index.html"
-    })
-  ],
-  externals: {
-    react: {
-      commonjs: "react",
-      commonjs2: "react",
-      amd: "react",
-      root: "React"
-    },
-    "react-dom": {
-      commonjs: "react-dom",
-      commonjs2: "react-dom",
-      amd: "react-dom",
-      root: "ReactDOM"
-    }
-  }
 };

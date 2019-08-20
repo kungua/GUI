@@ -2,11 +2,12 @@
   "name": "gui-react",
   "version": "0.0.2",
   "description": "瓜 UI",
-  "main": "index.js",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server",
-    "build": "webpack"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
   },
   "files": [
     "/dist/**/*"
@@ -26,6 +27,7 @@
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.8.5",
     "awesome-typescript-loader": "^5.2.1",
+    "cross-env": "^5.2.0",
     "html-webpack-plugin": "^3.2.0",
     "typescript": "^3.5.3",
     "webpack": "^4.39.2",
