@@ -3,7 +3,7 @@ import * as React from "react";
 import Icon from "./icon";
 
 ReactDOM.render(<div>
-  <Icon name="wechat"/>
-  <Icon name="alipy"/>
-  <Icon name="baidu"/>
+  <Icon name="wechat-fill"/>
+  <Icon name="QQ"/>
+  <Icon name="alipay"/>
 </div>, document.querySelector('#app'));
