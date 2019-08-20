@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 function Button() {
   return <span>我是一个按钮</span>;
