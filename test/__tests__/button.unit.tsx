@@ -4,7 +4,7 @@ import Button from '../../lib/button'
 
 describe('Button Test', () => {
   it('是个 span', () => {
-    const json = renderer.create(<Button />).toJSON()
+    const json = renderer.create(<Button/>).toJSON()
     expect(json).toMatchSnapshot()
   })
 })
